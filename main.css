@@ -1,11 +1,16 @@
-*{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+html {
+    box-sizing: border-box;
+    font-family:'PT Sans', sans-serif;
+}
+*, *::before, *::after {
+	box-sizing:inherit;
 }
 table {
   background: url('manpreet.jpg');
   background-repeat:no-repeat;
   height:400px;
   width:600px;
-  background-size: contain; 
+  /*background-size: contain; */
   margin: 0 auto;
 }
+/* Is am unable to understand why the players and the board image is not appearing 

@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snakes & Ladders</title>
+  <title>Vue.js Game Snakes and ladders</title>
   <link rel="stylesheet" href="main.css">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="vue.js"></script>
 </head>
 <body>
-<!-- Link for image 
+<!-- Link for image of board manpreet.jpg
 http://www.nepaliclass.com/wp-content/uploads/2018/04/snake-and-ladder-board-game.jpg
 
 https://ca.images.search.yahoo.com/yhs/search;_ylt=AwrDQpe8tv5etk8AvicXFwx.;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=snakes+ladders+images&fr=yhs-shnl-001&hspart=shnl&hsimp=yhs-001
@@ -17,14 +17,7 @@ https://ca.images.search.yahoo.com/yhs/search;_ylt=AwrDQpe8tv5etk8AvicXFwx.;_ylu
 <div id="app">
 <!-- for board-->
     <table id="board" :style="background: url, background-repeat:no-repeat;">
-      <tr v-for="row in boardData">
-        <td v-for="cell in row">
-          <span v-for="player in players">
-            <img v-if="cell == player.currentNum" :src="gamer.img" class="time" height="30">  
-          </span>  
-          
-        </td>
-      </tr>
+      
     </table>
 
 
