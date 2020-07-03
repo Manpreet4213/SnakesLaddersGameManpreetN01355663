@@ -9,7 +9,9 @@ I have taken the players images from the link - https://ca.images.search.yahoo.c
 
 ## Links visited to know more about Vue.js
 I took some help from this link https://stackoverflow.com/questions/38085180/how-to-disable-input-conditionally-in-vue-js 
-for doing the disable event for the 2 persons when one of them is active and to make the other one disable of doing anything. Like when one player is rolling the dice other is unable to do anything.
+For doing the disable event for the 2 persons when one of them is active and to make the other one disable of doing anything. Like when one player is rolling the dice other is unable to do anything.
+ 
+ 
  I visted this link while making the board game so as to get some idea about vue code but there was nothing https://blog.logrocket.com/how-to-write-a-vue-js-app-completely-in-typescript/
  
 
