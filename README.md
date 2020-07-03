@@ -1,6 +1,6 @@
 # SnakesLaddersGameManpreetN01355663
 
-## Links for images of the board, person1 and person2- Date acessed- 1JUly 2020
+## Links for images of the board, person1 and person2- Date acessed- 1 JUly 2020
 http://www.nepaliclass.com/wp-content/uploads/2018/04/snake-and-ladder-board-game.jpg
 
 https://ca.images.search.yahoo.com/yhs/search;_ylt=AwrDQpe8tv5etk8AvicXFwx.;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=snakes+ladders+images&fr=yhs-shnl-001&hspart=shnl&hsimp=yhs-001
