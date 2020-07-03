@@ -1,0 +1,11 @@
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table {
+  background: url('manpreet.jpg');
+  background-repeat:no-repeat;
+  height:400px;
+  width:600px;
+  background-size: contain; 
+  margin: 0 auto;
+}

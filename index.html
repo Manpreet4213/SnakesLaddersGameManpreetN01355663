@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snakes & Ladders</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="vue.js"></script>
+</head>
+<body>
+<!-- Link for image 
+http://www.nepaliclass.com/wp-content/uploads/2018/04/snake-and-ladder-board-game.jpg
+
+https://ca.images.search.yahoo.com/yhs/search;_ylt=AwrDQpe8tv5etk8AvicXFwx.;_ylu=X3oDMTByMjB0aG5zBGNvbG8DYmYxBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=snakes+ladders+images&fr=yhs-shnl-001&hspart=shnl&hsimp=yhs-001
+-->
+<div id="app">
+<!-- for board-->
+    <table id="board" :style="background: url, background-repeat:no-repeat;">
+      <tr v-for="row in boardData">
+        <td v-for="cell in row">
+          <span v-for="player in players">
+            <img v-if="cell == player.currentNum" :src="gamer.img" class="time" height="30">  
+          </span>  
+          
+        </td>
+      </tr>
+    </table>
+
+
+<!--I took some help from this link https://stackoverflow.com/questions/38085180/how-to-disable-input-conditionally-in-vue-js 
+for doing the disable event for the 2 persons when one of them is active and to make the other one disable of doing anything. Like when one player is rolling the dice other is unable to do anything.-->
+<!--For player one-->
+    <div :class="!gamers[0].disabledDice ? 'dice-1-container active' : 'dice-1-container'">
+          <button class="dice-btn" v-on:click="rollDice(gamers[0])" :unactive="players[0].disabledDice">
+            <p>Person 1</p><img src="images/dice.png" class="person">
+          </button>
+          <p class="diceoutput1" v-if="gamers[0].diceNum">Dice rolled to {{gamers[0].diceNum}}</p>
+     </div>
+<!-- For player two-->
+     <div :class="!gamers[1].disabledDice ? 'dice-2-container active' : 'dice-1-container'">
+          <button class="dice-btn" v-on:click="rollDice(gamers[1])" :unactive="players[0].disabledDice">
+            <p>Person 2</p><img src="images/dice.png" class="person">
+          </button>
+          <p class="diceoutput2" v-if="gamers[0].diceNum">Dice rolled to {{gamers[1].diceNum}}</p>
+     </div>
+
+</div>
+</body>
+</html>
